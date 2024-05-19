@@ -5,66 +5,269 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-white italic">
-<!--é pa com uma puta dor-->
-  <section class="bg-blue-900 w-full py-8 justify-between">
-    <div class=" max-w-7xl mx-auto flex justify-between items-center px-14"> 
-      <div class=" flex content-center">
-      <img class="h-14" src="/src/imageFJN.png" alt="">
-      <h1 class="text-1xl font-bold flex items-center">
-        <span class="text-slate-50">Faculdade de Juazeiro Do Norte</span>
-      </h1>
+<body class="bg-white">
+
+    <!-- seção do cabeçalho-->
+  <section class="bg-blue-950 w-full py-8 justify-between shadow-black">
+    <div class="absolute right-2">
+      <a class="rounded bg-blue-700 text-white p-3 hover:bg-blue-900" href="#">Biblioteca Virtual</a>
+      <a class="rounded bg-blue-700 text-white p-3 hover:bg-blue-900" href="#">Confira Suas Notas</a>
     </div>
-      <nav class=" text-slate-50 font-bold flex space-x-6 text-xl">
-        <a href="">Home</a>
-
-        <a href="">Graduações</a>
-
-        <a href="">Pós-Graduações</a>
-
-        <a href="">Institucional</a>
-
-        <a href="">Fale Conosco</a>
-        
+    <div class="flex-col mx-auto flex justify-between items-center px-14 space-y-4"> 
+      <div class="flex justify-between items-center ">
+        <h1 class="text-1xl font-bold flex items-center">
+          <span class="text-white text-4xl">Fazendo Parte</span>
+        </h1>
+        <div class="flex-col items-center text-center">
+          <img class="h-60" src="/src/Images/uninassau-v.svg" alt="Logo da Empresa" srcset="/src/image@2x.png 2x, /src/image@3x.png 3x">
+        </div>
+        <h1 class="text-1xl font-bold flex items-center">
+          <span class="text-white text-4xl">Da Sua História!</span>
+        </h1>
+      </div>
+      <nav class="text-white font-bold flex space-x-8 text-xl">
+        <a class="hover:text-sky-200 hover:animate-pulse" href="#">Home</a>
+        <a class="hover:text-sky-200 hover:animate-pulse" href="#">Graduações</a>
+        <a class="hover:text-sky-200 hover:animate-pulse" href="#">Pós-Graduações</a>
+        <a class="hover:text-sky-200 hover:animate-pulse" href="#">Institucional</a>
+        <a class="hover:text-sky-200 hover:animate-pulse" href="#">Fale Conosco</a>
       </nav> 
-      
     </div>
   </section>
   
-  
+  <!-- seção de paginação-->
+
   <section class="bg-white py-4">
-      <div class="absolute right-2">
-        <input type="text" name="" id="" class="border-solid border-2 border-slate-500 rounded">
-      <a class= "rounded bg-blue-600 text-slate-50 p-3" href="#">Biblioteca Virtual</a>
-      <a class="rounded bg-blue-600 text-slate-50 p-3" href="#">Confira Suas Notas</a>
+    <div class="absolute right-10">
+      <input type="text" name="" id="" placeholder="Pesquisar" class="border-solid border-2 border-gray-500 rounded">
     </div>
     <div class="px-2">
-    <span class="text-slate-600 px-1">Você está em:</span> <span class=" text-slate-950"><a href="#">Página Inicial</a></span>
-  </div>
+      <span class="text-gray-600 px-1">Você está em:</span> 
+      <span class="text-gray-950"><a href="#">Página Inicial</a></span>
+    </div>
   </section>
-    <section class=" w-full py-28 justify-between bg-slate-400 font-sans  ">
 
 
-      <div class="max-w-7xl mx-auto flex px-14 space-x-8 ">
+    <!-- seção de divulgação-->
 
-        <div>
-         <img src="/src/vestibular-2024-1-1200x900.png" alt="vest" class="h-96">
-        </div>
-        <div class="flex-col space-x-6 justify-center items-center text-center space-y-6 ">
-          <div>
-          <img src="/src/Regolio.png" alt="horas" class="w-36">
-        </div>
-          <div>
-          <span class="font-sans font-bold text-2xl">FALTAM 52 DIAS PAR AO VESTIBULAR 2024.2!</span>
-        </div>
-          <div>
-          <button class="bg-blue-950 text-slate-50 py-2 rounded w-48 ">Tenha Mais Informações</button>
-        </div>
-        </div>
-
+    <section class="w-full py-20 justify-between font-sans bg-gradient-to-r from-blue-200 to-gray-500">
+      <div class="text-center font-sans font-semibold text-4xl text-black mb-8">
+          <h1>Seja protagonista da sua história, <span class="text-gray-700"><a href="#" class="underline">Inscreva-se Já!</a></span>.</h1>
       </div>
-    </section>
-     
+      <div class="max-w-7xl mx-auto border-4 border-gray-300 rounded-lg bg-gradient-to-r from-gray-200 to-gray-100 px-4 sm:px-14">
+          <div class="flex space-x-8 items-center justify-center">
+              <div class="flex-1 relative flex justify-center items-center text-center" id="imagem-container">
+                  <img id="imagem-1" src="/src/Images/Propaganda1.jpg" alt="vestibular 2024" class="h-96" srcset="/src/vestibular-2024-1-1200x900@2x.png 2x, /src/vestibular-2024-1-1200x900@3x.png 3x">
+                  <button id="prev-button" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-2">
+                      <svg class="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                      </svg>
+                  </button>
+                  <button id="next-button" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-2">
+                      <svg class="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                  </button>
+              </div>
+              <div class="flex-1 flex flex-col justify-center items-center text-center space-y-6">
+                  <div class="flex justify-center items-center">
+                      <img src="/src/Images/Regolio.png" alt="horas" class="w-36" srcset="/src/Regolio@2x.png 2x, /src/Regolio@3x.png 3x">
+                  </div>
+                  <div id="texto-container">
+                      <span id="texto-1" class="font-sans font-bold text-2xl text-blue-900">FALTAM 52 DIAS PARA O VESTIBULAR 2024.2!</span>
+                  </div>
+                  <div>
+                      <button class="bg-blue-900 text-white py-2 rounded w-48 hover:bg-blue-700">Tenha Mais Informações</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-8 text-gray-800">
+          <p class="text-center">Na Uninassau, oferecemos educação de qualidade para o sucesso dos nossos alunos. Nossos cursos são práticos e preparatórios para o mercado de trabalho. Junte-se a uma comunidade vibrante e diversificada. <a href="#" class="underline">Inscreva-se agora</a> e comece sua jornada acadêmica conosco.</p>
+      </div>
+  </section>
   
+  
+  
+  
+
+  <!-- seção de noticias-->
+  
+  <section class="py-8 bg-gray-200 space-y-8">
+    <div class="text-center font-sans font-semibold text-6xl text-black">
+      <h1>Notícias</h1>
+    </div>
+    <div class="relative inline-flex mx-4">
+      <select class="border border-gray-300 rounded-md px-3 py-2 bg-white text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 ">
+        <option disabled selected hidden>Selecione uma opção</option>
+        <option>Vestibular</option>
+        <option>Processo Seletivo</option>
+        <option>Noticias</option>
+      </select>
+      
+    </div>
+
+    <div class="grid grid-cols-3 gap-8 items-center justify-center ">
+      <div class="text-center space-y-2 mx-4 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação1.jpeg" alt="Imagem 1" class=" w-full h-44 mx-auto rounded"></a>
+        <p>Unidade da Uninassau em Recife promove semana de revisão para 40º Exame da OAB.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+      <div class="text-center px-2 space-y-2 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação2.jpg" alt="Imagem 2" class=" w-full h-44 mx-auto rounded"></a>
+        <p>Dia Internacional da Internet Segura: Saiba como usar a internet de forma segura.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+      <div class="text-center space-y-2 mx-4 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação3.jpg" alt="Imagem 3" class=" w-full h-44 mx-auto rounded"></a>
+        <p>Controle emocional: o que é e como colocá-lo em prática.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+      <div class="text-center space-y-2 mx-4 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação4.jpg" alt="Imagem 4" class="l w-full h-44 mx-auto rounded"></a>
+        <p>Tudo se constrói antes na mente.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+      <div class="text-center  px-2 space-y-2 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação5.jpg" alt="Imagem 5" class=" w-full h-44 mx-auto rounded"></a>
+        <p>Consolidando a presença em Natal, UNINASSAU inaugura novo campus.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+      <div class="text-center space-y-2 mx-4 bg-gray-100 p-4 rounded-lg shadow-md h-72">
+        <a href="#"><img src="/src/Images/Divulgação6.jpg" alt="Imagem 6" class=" w-full h-44 mx-auto rounded"></a>
+        <p>Especialista explica como os idosos podem manter uma boa higiene bucal.</p>
+        <a class="text-slate-600" href="#">Veja a matéria completa!</a>
+      </div>
+    </div>
+    <div class="flex justify-center items-center space-x-2 mt-8">
+      <button class="p-2 bg-white text-gray-700 rounded-full shadow-md hover:bg-gray-300 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="p-2 bg-white text-gray-700 rounded-full shadow-md hover:bg-gray-300 focus:outline-none">1</button>
+      <button class="p-2 bg-white text-gray-700 rounded-full shadow-md hover:bg-gray-300 focus:outline-none">2</button>
+      <button class="p-2 bg-white text-gray-700 rounded-full shadow-md hover:bg-gray-300 focus:outline-none">3</button>
+      <span class="p-2 text-gray-50">...</span>
+      <button class="p-2 bg-white text-gray-700 rounded-full shadow-md hover:bg-gray-300 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  
+
+  <!--Seção telecursos 2000-->
+  <section class="flex-1 h-auto items-center justify-center  bg-gradient-to-r from-blue-700 to-green-500 ">
+    <div class="text-center py-14">
+        <h3 class="text-4xl font-semibold text-black">Conheça Alguns Dos Nossos Cursos</h3>
+    </div>
+    <div class="bg-blue-900 rounded-lg shadow-lg overflow-hidden flex w-2/3 max-w-7xl mx-auto border-4 border-gray-300 relative">
+      <!-- Esquerda -->
+      <div class="w-1/3 bg-gray-300 p-4 border-r-2 border-gray-800">
+        <ul id="course-list" class="space-y-2">
+          <li><button data-course="direito" class="course-btn bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Direito</button></li>
+          <li><button data-course="medicina" class="course-btn bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Medicina</button></li>
+          <li><button data-course="enfermagem" class="course-btn bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Enfermagem</button></li>
+          <li><button data-course="sistemas" class="course-btn bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Sistemas de Informação</button></li>
+          <li><button data-course="fisioterapia" class="course-btn bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Fisioterapia</button></li>
+        </ul>
+      </div>
+
+      <!-- Direita -->
+      <div class="w-2/3 bg-gray-200 p-6">
+        <div id="course-description" class="space-y-4">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Selecione um curso</h2>
+          <p class="text-gray-700">Explore os cursos oferecidos pela Uninassau e escolha o que melhor se adequa aos seus interesses e objetivos de carreira. Ao clicar em um curso à esquerda, você verá um resumo detalhado aqui.</p>
+          <p class="text-gray-700">Nossos cursos são projetados para prepará-lo para o mercado de trabalho, fornecendo as habilidades e conhecimentos necessários para ter sucesso em sua área escolhida. Junte-se a nós e comece sua jornada acadêmica hoje mesmo!</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Pós telecurso-->
+    <div class="text-center py-14">
+        <h3 class="text-4xl font-semibold text-black">Tambem Temos Pós-Graduações!</h3>
+    </div>
+    <div class="bg-blue-900 rounded-lg shadow-lg overflow-hidden flex w-2/3 max-w-7xl mx-auto border-4 border-gray-300 relative">
+      <!-- Esquerda -->
+      <div class="w-1/3 bg-gray-300 p-4 border-r-2 border-gray-800">
+        <ul id="course-list2" class="space-y-2">
+          <li><button data-course="direito2" class="course-btn2 bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Direito Civil e Processo Civil</button></li>
+          <li><button data-course="medicina2" class="course-btn2 bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Medicina do Trabalho</button></li>
+          <li><button data-course="enfermagem2" class="course-btn2 bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Enfermagem em Terapia Intensiva</button></li>
+          <li><button data-course="sistemas2" class="course-btn2 bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Robótica Aplicada</button></li>
+          <li><button data-course="fisioterapia2" class="course-btn2 bg-sky-950 hover:bg-blue-700 text-white rounded-md px-4 py-2 w-full text-left">Fisioterapia Traumato-Ortopédica</button></li>
+        </ul>
+      </div>
+
+      <!-- Direita -->
+      <div class="w-2/3 bg-gray-200 p-6">
+        <div id="course-description2" class="space-y-4">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Selecione um curso</h2>
+          <p class="text-gray-700">Explore os cursos oferecidos pela Uninassau e escolha o que melhor se adequa aos seus interesses e objetivos de carreira. Ao clicar em um curso à esquerda, você verá um resumo detalhado aqui.</p>
+          <p class="text-gray-700">Nossos cursos são projetados para prepará-lo para o mercado de trabalho, fornecendo as habilidades e conhecimentos necessários para ter sucesso em sua área escolhida. Junte-se a nós e comece sua jornada acadêmica hoje mesmo!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-8 text-gray-900 pb-4">
+      <p class="text-center">
+        A UNINASSAU oferece uma variedade de cursos de graduação e pós-graduação em diversas áreas do conhecimento. Seja na busca por uma formação de nível superior ou para aprofundar os estudos em uma área específica, os alunos encontram opções que atendem às suas necessidades acadêmicas e profissionais. Com programas abrangentes e corpo docente qualificado, a UNINASSAU proporciona uma educação de qualidade, preparando os alunos para enfrentar os desafios do mercado de trabalho e alcançar seus objetivos profissionais.
+      </p>
+    </div>
+
+</section>
+
+
+
+<!--Bem amigos, acabou :c-->
+<!--obs: meter os icones das redes sociais e zap zap, estilizar melhor porque ta feio-->
+<footer class="bg-blue-950 py-1">
+  <section class="bg-blue-950 space-y-6">
+    <div class="text-center font-sans font-semibold text-3xl text-white">
+      <h1>Obrigado Pela Visita!</h1>
+    </div>
+    <div class="text-gray-100 grid grid-cols-3 items-center justify-center text-center">
+      <div class="">
+        <ul class="space-y-2">
+          <li><a href="#">Financeiro</a></li>
+          <li><a href="#">Administrativo</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex-row">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <p>Contato: +55 (88) 4002-8922</p>
+        </div>
+      </div>
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#">Senha incorreta?</a></li>
+          <li><a href="#">Perdeu a Matricula?</a></li>
+          <li><a href="#">Problemas de Login?</a></li>
+        </ul>
+      </div>
+<!--
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><p>Contato: +55 (88) 4002-8922</p></li>
+        </ul>
+      </div>
+-->
+    </div>
+    <div class="text-slate-50 text-center mt-8 opacity-50">
+      UNINASSAU
+    </div>
+  </section>
+</footer>
+
+
+
+<script src="./js/index.js"></script>
 </body>
 </html>
