@@ -1,9 +1,9 @@
     const images = [
-        '/src/Images/Propaganda1.jpg',
-        '/src/Images/Propaganda2.jpg',
-        '/src/Images/Propaganda3.jpg',
-        '/src/Images/Propaganda4.png',
-        '/src/Images/Propaganda5.png',
+        '/src/Images/Divulgação1.jpg',
+        '/src/Images/Divulgação2.webp',
+        '/src/Images/Divulgação3.png',
+        '/src/Images/Divulgação4.jpeg',
+        '/src/Images/Divulgação5.jpeg',
     ];
 
     let currentIndex = 0;
